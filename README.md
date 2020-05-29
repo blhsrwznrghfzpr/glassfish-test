@@ -1,6 +1,6 @@
 # glassfish-test
 
-Teratail質問用
+Teratail質問用 https://teratail.com/questions/265869
 
 ## Setup
 ```terminal
