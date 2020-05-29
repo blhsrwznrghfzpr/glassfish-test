@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="login" namespace="/" extends="struts-default">
+		<action name="login" class="test.action.login.Login">
+			<result>
+				/WEB-INF/view/login/login.jsp
+			</result>
+		</action>
+		<action name="loginAuth" class="test.action.login.Login" method="doAuth">
+			<result name="success">
+				/WEB-INF/view/login/redirect.jsp
+			</result>
+		</action>
+	</package>
+</struts>
